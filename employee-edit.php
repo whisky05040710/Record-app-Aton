@@ -49,7 +49,7 @@
             $address = mysqli_real_escape_string($conn, $_POST['address']);
 
             $query_update = "UPDATE employee SET lastname = '$lastname', firstname = '$firstname', office_id = $office_id, address = '$address' WHERE id = $id";
-            header("Location: http://localhost/records_app/save.php");
+            header("Location: http://localhost/record-app-aton/employee.php");
 
             if(mysqli_query($conn, $query_update)){
             }else{

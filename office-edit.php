@@ -72,7 +72,7 @@ if(isset($_POST['submit'])){
 $update_query= "UPDATE office SET name = '$name', contactnum = '$contact_num', email='$email', address = '$address', city='$city', country = '$country', postal='$postal'
 WHERE id = $id";
 //confirm save
-header("Location: http://localhost/records_app/save.php");
+header("Location: http://localhost/record-app-aton/office.php");
 
 // execute query 
 if(mysqli_query($conn, $update_query)){
